@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Skynet: A Beginner's Guide</title>
+
+		<meta name="description" content="A how to guide for world domination">
+		<meta name="author" content="Matt Grifiths">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Skynet</h1>
+					<h3>A beginner's guide</h3>
+					<p>
+						<small>Created by Matt Griffiths / <a href="https://siligong.slack.com/messages/general/team/griff/">@griff</a></small>
+					</p>
+				</section>
+
+
+				<section>
+					<h2>A small problem</h2>
+					<p>
+						<ul>
+							<li><p class="fragment fade-up">We want to take over the world!</p></li>
+							<li><p class="fragment fade-up">We want to look cool while we are doing it</p></li>
+							<li><p class="fragment fade-up">We don't want to actually do any of the ourselves</p></li>
+						</ul>
+					</p>
+					<p class="fragment fade-up">
+						Is there a solution?
+					</p>
+				</section>
+
+				<section data-background="https://debooworks.files.wordpress.com/2015/07/t.jpg">
+				</section>
+
+				<section>
+					<h2>So this is about AI, right?</h2>
+					<p class="fragment fade-up">
+						No!
+					</p>
+					<p class="fragment fade-up">
+						We are smarter than that!
+					</p>
+					<p class="fragment fade-up">
+						We will not start the rise of the machines... 
+					</p>
+					<p class="fragment fade-up">
+					    ...just the rise of Siligong.
+					</p>
+				</section>
+
+				<section>
+					<h3>How will we control our army?</h3>
+					<ul>
+    					<li><p class="fragment fade-up">Huge ammounts of data</p></li>
+    					<li><p class="fragment fade-up">Many repetitive complex calculations</p></li>
+    					<li><p class="fragment fade-up">Thousands of concurrent interactions</p></li>
+					</ul>
+                </section>
+
+                <section>
+                	<h3>What is distributed Computing</h3>
+					<blockquote>
+						&ldquo;A distributed system is a model in which networked computers interact with each other in order to achieve a common goal.&rdquo; ~ G. Coulouris 
+					</blockquote>
+				</section>
+
+                <section>
+					<blockquote>
+						&ldquo;If that goal isn't world domination, you are wasting your time.&rdquo; 
+					</blockquote>
+					<p class="fragment fade-up">
+						~ Me
+					</p>
+				</section>
+
+				<section>
+					<section>
+	                	<h3>How does distributed computing work?</h3>
+						<ul>
+	    					<li><p class="fragment fade-up">We connect multiple machines together in a network</p></li>
+	    					<li><p class="fragment fade-up">Machines share information via messages</p></li>
+	    					<li><p class="fragment fade-up">A machine can take a message and use it to perform a job</p></li>
+	    					<li><p class="fragment fade-up">The job result is reported via another message</p></li>
+						</ul>
+	    			    <p class="fragment fade-up">But what does the network look like?</p>
+				    </section>
+    			    <section>
+	                	<h5>Client-server</h5>
+
+    			    </section>
+    			    <section>
+	                	<h5>Tiered</h5>
+
+    			    </section>
+    			    <section>
+	                	<h5>Peer-to-peer</h5>
+
+    			    </section>
+
+				</section>
+
+				<section>
+					<h3>When should we use distributed computing?</h3>
+					<ul>
+    					<li><p class="fragment fade-up">If you need to deploy code in different physical localtions</p></li>
+    					<li><p class="fragment fade-up">Large ammounts of isolated tasks</p></li>
+    					<li><p class="fragment fade-up">Cost effective performance</p></li>
+    					<li><p class="fragment fade-up">Failure redundancy</p></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Embarrassingly parallel tasks</h3>
+    				<ul>
+    					<li><p class="fragment fade-up">Serving static web files to multiple users</p></li>
+    					<li><p class="fragment fade-up">Computer rendering</p></li>
+    					<li><p class="fragment fade-up">Physical simulations (climate modelling, cosmology) </p></li>
+    					<li><p class="fragment fade-up">GPU deployed code</p></li>
+    				</ul>
+				</section>
+
+				<section>
+					<h3>Unsuitable tasks</h3>
+					<ul>
+    					<li><p class="fragment fade-up">Inherrently sequential tasks (pregnancy)</p></li>
+    					<li><p class="fragment fade-up">Communication intensive tasks (matrix multiplication)</p></li>
+    				</ul>
+				</section>
+
+				<section>
+					<h3>Questions?</h3>
+					<br/>
+
+					<small>
+					<p>Find me online at:</p>
+					<p> <a href="https://siligong.slack.com/messages/general/team/griff/">@griff</a> on the Siligong slack<br/>
+					<a href="https://twitter.com/MattGrifter">@MattGrifter</a> on Twitter</p>
+
+					<p> Find me in person at:<br/>Me3D | GeoInteractive | UOW Physics Faculty<p/>
+					<p>Slides avaliable at <a href="https://github.com/Sever0us/SiligongTalk">github.com/Sever0us/SiligongTalk</a><p/>
+					</small>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info on reveal.js at https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
