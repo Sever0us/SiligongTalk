@@ -75,22 +75,19 @@
 					<p class="fragment fade-up">
 						We will not start the rise of the machines... 
 					</p>
-					<p class="fragment fade-up">
-					    ...just the rise of Siligong.
-					</p>
 				</section>
 
 				<section>
-					<h3>How will we control our army?</h3>
+					<h3>So what will we use?</h3>
 					<ul>
-    					<li><p class="fragment fade-up">Huge ammounts of data</p></li>
+    					<li><p class="fragment fade-up">Huge amounts of data</p></li>
     					<li><p class="fragment fade-up">Many repetitive complex calculations</p></li>
     					<li><p class="fragment fade-up">Thousands of concurrent interactions</p></li>
 					</ul>
                 </section>
 
                 <section>
-                	<h3>What is distributed Computing</h3>
+                	<h3>Distributed Computing</h3>
 					<blockquote>
 						&ldquo;A distributed system is a model in which networked computers interact with each other in order to achieve a common goal.&rdquo; ~ G. Coulouris 
 					</blockquote>
@@ -98,11 +95,21 @@
 
                 <section>
 					<blockquote>
-						&ldquo;If that goal isn't world domination, you are wasting your time.&rdquo; 
+						&ldquo;If that goal isn't world domination, you're wasting your time.&rdquo; 
 					</blockquote>
 					<p class="fragment fade-up">
 						~ Me
 					</p>
+				</section>
+
+				<section>
+					<h3>When should we use distributed computing?</h3>
+					<ul>
+    					<li><p class="fragment fade-up">If you need to deploy code in different physical locations</p></li>
+    					<li><p class="fragment fade-up">Large quantities of isolated tasks</p></li>
+    					<li><p class="fragment fade-up">Cost effective performance</p></li>
+    					<li><p class="fragment fade-up">Failure redundancy</p></li>
+					</ul>
 				</section>
 
 				<section>
@@ -118,28 +125,23 @@
 				    </section>
     			    <section>
 	                	<h5>Client-server</h5>
+	                	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/500px-Client-server-model.svg.png">
 
     			    </section>
     			    <section>
 	                	<h5>Tiered</h5>
+	                	<img src="http://www.hoggnet.com/NWWPics/Fat%20Tree.jpg">
 
     			    </section>
     			    <section>
 	                	<h5>Peer-to-peer</h5>
+	                	<img src="http://jasonbrimhall.info/wp-content/uploads/2013/12/p2p_net.gif">
 
     			    </section>
 
 				</section>
 
-				<section>
-					<h3>When should we use distributed computing?</h3>
-					<ul>
-    					<li><p class="fragment fade-up">If you need to deploy code in different physical localtions</p></li>
-    					<li><p class="fragment fade-up">Large ammounts of isolated tasks</p></li>
-    					<li><p class="fragment fade-up">Cost effective performance</p></li>
-    					<li><p class="fragment fade-up">Failure redundancy</p></li>
-					</ul>
-				</section>
+
 
 				<section>
 					<h3>Embarrassingly parallel tasks</h3>
@@ -154,10 +156,40 @@
 				<section>
 					<h3>Unsuitable tasks</h3>
 					<ul>
-    					<li><p class="fragment fade-up">Inherrently sequential tasks (pregnancy)</p></li>
-    					<li><p class="fragment fade-up">Communication intensive tasks (matrix multiplication)</p></li>
+    					<li><p class="fragment fade-up">Intrinsically sequential tasks</p></li>
+    					<li><p class="fragment fade-up">Communication intensive tasks</p></li>
     				</ul>
 				</section>
+
+				<section>
+					<h3>A real world example: Buildflow</h3>
+					<ul>
+    					<li><p class="fragment fade-up">Many students all want to print 3D models</p></li>
+    					<li><p class="fragment fade-up">A student's device might not be up to the task</p></li>
+    					<li><p class="fragment fade-up">To AWS, of course!</p></li>
+    				</ul>
+				</section>
+
+
+				<section>
+					<h3>Our Architecture</h3>
+					<ul>
+    					<li><p class="fragment fade-up">A tiered system</p></li>
+    					<li><p class="fragment fade-up">Amazon Aurora RDS as the base layer</p></li>
+    					<li><p class="fragment fade-up">EC2 Instances as a mid tier computation layer</p></li>
+    					<li><p class="fragment fade-up">Rasperry Pi 3 as the lowest layer device</p></li>
+    				</ul>
+				</section>
+
+				<section>
+					<h3>Why use AWS?</h3>
+					<ul>
+    					<li><p class="fragment fade-up">AWS allows you to build distributed computational platforms all in the cloud</p></li>
+    					<li><p class="fragment fade-up">It supports any distributed computing architecture</p></li>
+    					<li><p class="fragment fade-up">It's dirt cheap</p></li>
+    				</ul>
+				</section>
+
 
 				<section>
 					<h3>Questions?</h3>
